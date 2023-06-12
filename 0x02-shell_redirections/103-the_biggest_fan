@@ -1,0 +1,2 @@
+#!/bin/bash
+awk -F'\t' '{count[$1]++} END {for (host in count) print host, count[host]}' | sort -k2nr | head -n +12 | tail -n +2
