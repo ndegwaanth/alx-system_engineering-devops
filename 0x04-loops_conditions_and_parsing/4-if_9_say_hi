@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# script display Best School 10 times the 9th iteration display Best School and hi
+iterate=1
+while [ $iterate -le 10 ]; do
+	if [ $iterate -eq 10 ]; then
+		echo "Hi"
+	fi
+	echo "Best School"
+	((iterate++))
+done
