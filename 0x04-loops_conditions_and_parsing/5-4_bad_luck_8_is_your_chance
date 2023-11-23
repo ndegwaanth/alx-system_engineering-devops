@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env  bash
 # Bash script that loops from 1-10
 val=1
 while [ $val -le 10 ]; do
