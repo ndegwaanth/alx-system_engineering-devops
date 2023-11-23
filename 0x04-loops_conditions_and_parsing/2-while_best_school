@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script displaying Best School 10 time using while loop
+leng=1
+while [ $leng -le 10 ]; do
+	echo "Best School"
+	((leng++))
+done
