@@ -9,5 +9,6 @@ while [ $val -le 10 ]; do
 	else
 		echo "Best School"
 	fi
+	
 	((val++))
 done
