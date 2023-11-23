@@ -1,0 +1,13 @@
+#!/usr/bin/bash
+# Bash script that loops from 1-10
+val=1
+while [ $val -le 10 ]; do
+	if [ $val -eq 4 ]; then
+		echo "bad luck"
+	elif [ $val -eq 8 ]; then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((val++))
+done
