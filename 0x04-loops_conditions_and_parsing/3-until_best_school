@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script displaying Best School 10 time using until loop
+leng=1
+until [ $leng -le 10 ]; do
+        echo "Best School"
+        ((leng++))
+done
