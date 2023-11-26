@@ -1,0 +1,16 @@
+#!/bin/bash
+# Iterate through directories in /proc
+for pid_dir in /proc/*/; do
+    pid=$(basename "$pid_dir")
+    
+    # Check if the directory name is a number (PID)
+    if [[ $pid =~ ^[0-9]+$ ]]; then
+        # Get the process name from cmdline file
+        process_name=$(tr -d '\0' < "$pid_dir/cmdline")
+        
+        # Check if the process name contains the word "bash"
+        if [[ $process_name == *bash* ]]; then
+            echo "$pid $process_name"
+        fi
+    fi
+done
