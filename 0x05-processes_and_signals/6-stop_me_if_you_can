@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Bash script to kill the process without using kill command
+kill_process() {
+	pid=$(pgrep -f "4-to_infinity_and_beyond")
+	if [ -n $pid ]; then
+		pkill -P "$pid"
+		wait "$pid" 2>/dev/null
+		echo "Terminated"
+	
+	fi
+}
+
+trap kill_process SIGINT
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
