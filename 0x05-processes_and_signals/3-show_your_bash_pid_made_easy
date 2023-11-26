@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Bash script displaying the name of the process
 # Iterate through directories in /proc
 for pid_dir in /proc/*/; do
     pid=$(basename "$pid_dir")

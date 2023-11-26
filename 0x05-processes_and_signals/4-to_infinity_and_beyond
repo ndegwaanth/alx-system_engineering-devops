@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Bash script displaying a "To infinty and beyond"
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
