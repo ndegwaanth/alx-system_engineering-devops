@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Bash script displayin all the information in the local machine tha are runing
+ps aux
