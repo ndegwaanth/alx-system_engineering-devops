@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# use to terminate the process that run to infinity with the use of kill
+stop_process() {
+	kill -15 "$pid"
+	echo "Terminated"
+	exit 0
+}
+
+trap stop_process SIGINT
+
+while true; do
+	echo "To infinity and beyond"
+	sleep 2
+done
