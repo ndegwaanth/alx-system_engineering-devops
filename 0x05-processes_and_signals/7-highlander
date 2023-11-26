@@ -1,0 +1,17 @@
+#!/bin/env bash
+# Function to handle SIGTERM signal
+handle_sigterm() {
+    echo "I am invincible!!!"
+    exit 0
+}
+
+# Set up trap for SIGTERM to call the handle_sigterm function
+trap handle_sigterm SIGTERM
+
+# Infinite loop with sleep 2 between each iteration
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+    echo "To infinity and beyond"
+    echo "I am invicible!!!"
+done
