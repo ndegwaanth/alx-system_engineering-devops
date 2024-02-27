@@ -1,0 +1,16 @@
+#!/bin/env bash
+
+# Check if the number of arguments is less than 3, display usage and exit if true
+if [ "$#" -lt 4 ]; then
+    echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+    exit 1
+fi
+
+# Assigning parameters to variables
+file_path="$1"
+server_ip="$2"
+username="$3"
+ssh_key="$4"
+
+# Transfer file using scp with strict host key checking disable
+scp -o StrictHostKeyChecking=no -i "$ssh_key" "$file_path" "$username@$server_ip":~/
