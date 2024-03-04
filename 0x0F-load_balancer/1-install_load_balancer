@@ -1,0 +1,8 @@
+#!/bin/bash
+# installing HAproxy
+
+# apt-get update
+apt-get update
+
+# apt-get install haproxy=2.6.\*
+apt-get install haproxy=2.6.\*
