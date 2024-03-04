@@ -1,17 +1,9 @@
-#!/bin/bash
-#nginx installation
-
-# Update package index
-sudo apt update
-
-# Install Nginx
-sudo apt install nginx -y
-
-# Start Nginx
-sudo systemctl start nginx
-
-# Enable Nginx to start on boot
-sudo systemctl enable nginx
-
-# Display Nginx status
-sudo systemctl status nginx
+#!/usr/bin/env bash
+#install nginx
+sudo apt-get -y upgrade
+sudo apt-get -y install nginx
+echo 'Hello World!' | sudo tee /var/www/html/index.html
+echo '404- Not Found' > /usr/share/nginx/html/custom_404.html
+sed -i "listen 80 default_server/a add_header X-served-By \"$HOSTNAME\";" /etc/nginx/sites-available/default
+sed -i "listen 80 default_server/a error_page 404/custom_404.html;" /etc/nginx/sites-available/default
+sudo service nginx start

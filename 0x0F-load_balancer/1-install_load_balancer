@@ -1,16 +1,18 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# install hAproxy and provides redundancy over two web servers
+sudo apt-get -y update
+sudo apt-get -y install --no-install-recommends software-properties-common
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.6
+sudo apt-get -y install haproxy=2.6.\*
+sudo cat >> /etc/haproxy/haproxy.cfg <<EOF
+backend web-backend
+        balance roundrobin
+        server 308097-web-01 100.25.21.172:80 check
+        server 308097-web-02 52.87.232.176:80 check
 
-# Update package index
-sudo apt update
-
-# Install HAProxy
-sudo apt install haproxy -y
-
-# Start HAProxy
-sudo systemctl start haproxy
-
-# Enable HAProxy to start on boot
-sudo systemctl enable haproxy
-
-# Display HAProxy status
-sudo systemctl status haproxy
+frontend http
+        bind *:80
+        mode http
+        default_backend web-backend
+EOF
+sudo service haproxy restart
