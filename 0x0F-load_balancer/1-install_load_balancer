@@ -1,8 +1,16 @@
 #!/bin/bash
-# installing HAproxy
 
-# apt-get update
-apt-get update
+# Update package index
+sudo apt update
 
-# apt-get install haproxy=2.6.\*
-apt-get install haproxy=2.6.\*
+# Install HAProxy
+sudo apt install haproxy -y
+
+# Start HAProxy
+sudo systemctl start haproxy
+
+# Enable HAProxy to start on boot
+sudo systemctl enable haproxy
+
+# Display HAProxy status
+sudo systemctl status haproxy
