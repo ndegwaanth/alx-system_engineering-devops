@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+        <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+        </script>
+        <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    </script>
+    <meta name="keywords" content="HTML, Meta Tags, Metadata" />
+    <meta name="description" content="Learning about Meta Tags." />
+    <meta name="revised" content="Tutorialspoint, 3/7/2014" />
+    <link rel="stylesheet" href="features.css">
+</head>
+<body>
+    
+    <div style="background-color: lightcoral; height: 300px;">
+        <img src="menu.png" alt="menu icon" class="menu-icon">
+    </div>
+  <div class="place-search"><br /><br />
+    <input id="searchbar" type="text" onkeyup="search_animal()" placeholder="Search"><br /><br />
+    <img src="search.png" onkeypress="search_animal()" alt="search icon" class="search">
+  </div>
+
+    <table border="1" class="data" id="searchbar"><br /><br />
+            <tr style="color: blue; flex: 1fr;">
+                <th class="list">#</th>
+                <th class="key">KEY</th>
+                <th class="name">Institutions Name</th>
+                <th class="category">Category</th>
+            </tr>
+        <tr onclick="window.open('file4.html', '_self')">
+            <td>1.</td>
+            <td>AIU</td>
+            <td>AFRICA INTERNATIONAL UNIVERSITY</td>
+            <td>University</td>
+            
+        </tr>
+        <tr onclick="window.open('file5.html', '_self')">
+            <td>2.</td>
+            <td>AIU</td>
+            <td>University of Nairobi</td>
+            <td>University</td>
+        </tr>
+        <tr onclick="window.open('file6.html', '_self')">
+            <td>3.</td>
+            <td>ASM TTI
+            </td>
+            <td>AHMED SHAHAME MWIDANI TECHNICAL TRAINING INSTITUTE
+            </td>
+            <td>College
+            </td>
+        </tr>
+        <tr onclick="window.open('file7.html', '_self')">
+            <td>4.</td>
+            <td>ALDAITTI
+            </td>
+            <td>ALDAI TECHNICAL TRAINING INSTITUTE
+            </td>
+            <td>college</td>
+        </tr>
+        <tr onclick="window.open('file8.html', '_self')" >
+            <td>5.</td>
+            <td>AU</td>
+            <td>ALUPE UNIVERSITY
+            </td>
+            <td>University
+            </td>
+        </tr>
+        <tr>
+            <td>6.</td>
+            <td>ALUPE UNIVERSITY TVET INSTITUTE</td>
+            <td>ALUPE UNIVERSITY TVET INSTITUTE</td>
+            <td>University</td>
+        </tr>
+    
+        <tr>
+            <td>7.</td>
+            <td>AMIU</td>
+            <td>AMREF INTERNATIONAL UNIVERSITY</td>
+            <td>University</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>BAHATI IBAS</td>
+            <td>BAHATI INSTITUTE OF BUSINESS AND ADMINISTRATION STUDIES</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>BMA</td>
+            <td>BANDARI MARITIME ACADEMY</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>BARINGO TC</td>
+            <td>BARINGO TECHNICAL COLLEGE</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>11.</td>
+            <td>BELGUT TVC
+            </td>
+            <td>BELGUT TECHNICAL AND VOCATIONAL COLLEGE
+            </td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>12.</td>
+            <td>BOMET TVC
+            </td>
+            <td>BOMET TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>13.</td>
+            <td>BUC</td>
+            <td>BOMET UNIVERSITY COLLEGE
+            </td>
+            <td>University</td>
+        </tr>
+        <tr>
+            <td>14.</td>
+            <td>BONDO TTI</td>
+            <td>BONDO TECHNICAL TRAINING INSTITUTE</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>15.</td>
+            <td>BORABU TVC
+            </td>
+            <td>BORABU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>16.</td>
+            <td>BAC</td>
+            <td>BUKURA AGRICULTURAL COLLEGE
+            </td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>17.</td>
+            <td>BUMBE TTI</td>
+            <td>BUMBE TECHNICAL TRAINING INSTITUTE</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>18.</td>
+            <td>BUNGOMA NORTH TVC
+            </td>
+            <td>BUNGOMA NORTH TECHNICAL AND VOCATIONAL COLLEGE
+            </td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>19.</td>
+            <td>BUNYALA TVC</td>
+            <td>BUNYALA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>20.</td>
+            <td>BURETI TTI
+            </td>
+            <td>BURETI TECHNICAL TRAINING INSTITUTE
+            </td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>21.</td>
+            <td>BUSHIANGALA TTI</td>
+            <td>BUSHIANGALA TECHNICAL TRAINING INSTITUTE
+            </td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>22.</td>
+            <td>BUTERE TVC</td>
+            <td>BUTERE TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>College</td>
+        </tr>
+        <tr>
+            <td>23.</td>
+            <td>CUEA</td>
+            <td>CATHOLIC UNIVERSITY OF EASTERN AFRICA/td>
+            <td>University</td>
+        </tr>
+        <tr>
+            <td>24.</td>
+            <td>CTTR</td>
+            <td>CENTRE FOR TOURISM TRAINING AND RESEARCH</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>25.</td>
+            <td>CHAMASIRI TVC</td>
+            <td>CHAMASIRI TECHNICAL AND VOCATIONAL COLLEGE
+            </td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>26.</td>
+            <td>CHANZEYWE TVC</td>
+            <td>CHANZEYWE TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>27.</td>
+            <td>CHEPALUNGU TTI</td>
+            <td>CHEPALUNGU TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>28.</td>
+            <td>CHEPSIREI TVC</td>
+            <td>CHEPSIREI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>29.</td>
+            <td>CHERANGANY TVC</td>
+            <td>CHERANGANY TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>30.</td>
+            <td>CHUKA TVC</td>
+            <td>CHUKA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>31.</td>
+            <td>CU</td>
+            <td>CHUKA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>32.</td>
+            <td>COPUK</td>
+            <td>CO-OPERATIVE UNIVERSITY OF KENYA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>33.</td>
+            <td>CIT</td>
+            <td>COAST INSTITUTE OF TECHNOLOGY</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>34.</td>
+            <td>DAVID M WAMBULI TVC</td>
+            <td>DAVID M WAMBULI TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>35.</td>
+            <td>DAYSTAR</td>
+            <td>DAYSTAR UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>36.</td>
+            <td>DKUT</td>
+            <td>DEDAN KIMATHI UNIVERSITY OF TECHNOLOGY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>37.</td>
+            <td>DR. DANIEL WAKO MURENDE TVC</td>
+            <td>DR. DANIEL WAKO MURENDE TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>38.</td>
+            <td>EASA</td>
+            <td>EAST AFRICAN SCHOOL OF AVIATION</td>
+            <td>school</td>
+        </tr>
+        <tr>
+            <td>39.</td>
+            <td>EBUKANGA TVC</td>
+            <td>EBUKANGA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>40.</td>
+            <td>EU</td>
+            <td>EGERTON UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>41.</td>
+            <td>EKERUBO GIETAI TTI</td>
+            <td>EKERUBO GIETAI TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>42.</td>
+            <td>ELDAMA RAVINE TVC</td>
+            <td>ELDAMA RAVINE TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>43.</td>
+            <td>ELDO POLY</td>
+            <td>ELDORET POLYTECHNIC</td>
+            <td>polytechnic</td>
+        </tr>
+        <tr>
+            <td>44.</td>
+            <td>ELWAK TVC</td>
+            <td>ELWAK TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>45.</td>
+            <td>EMGWEN TVC</td>
+            <td>EMGWEN TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>46.</td>
+            <td>EMINING TTI</td>
+            <td>EMINING TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>47.</td>
+            <td>EMSOS TVC</td>
+            <td>EMSOS TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>48.</td>
+            <td>EMURUA DIKIRR TTI</td>
+            <td>EMURUA DIKIRR TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>49.</td>
+            <td>ENDEBESS TTI</td>
+            <td>ENDEBESS TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>50.</td>
+            <td>FAYYA TVC</td>
+            <td>FAYYA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>51.</td>
+            <td>FCK</td>
+            <td>FRIENDS COLLEGE KAIMOSI</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>52.</td>
+            <td>GU</td>
+            <td>GARISSA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>53.</td>
+            <td>GATANGA TVC</td>
+            <td>GATANGA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>54.</td>
+            <td>GATUNDU SOUTH TVC</td>
+            <td>GATUNDU SOUTH TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>55.</td>
+            <td>GITWEBE TTI</td>
+            <td>GITWEBE TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>56.</td>
+            <td>GODOMA TTI</td>
+            <td>GODOMA TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>57.</td>
+            <td>GLUK</td>
+            <td>GREAT LAKES UNIVERSITY OF KISUMU</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>58.</td>
+            <td>GRETSA</td>
+            <td>GRETSA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>59.</td>
+            <td>HEROES TVC</td>
+            <td>HEROES TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>60.</td>
+            <td>IJARA TVC</td>
+            <td>IJARA TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>61.</td>
+            <td>IKUTHA TVC</td>
+            <td>IKUTHA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>62.</td>
+            <td>ILU</td>
+            <td>INTERNATIONAL LEADERSHIP UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>63.</td>
+            <td>IUK</td>
+            <td>ISLAMIC UNIVERSITY OF KENYA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>64.</td>
+            <td>JOOUST</td>
+            <td>JARAMOGI OGINGA ODINGA UNIVERSITY OF SCIENCE AND TECHNOLOGY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>65.</td>
+            <td>JEREMIAH NYAGAH TI</td>
+            <td>JEREMIAH NYAGAH TECHNICAL INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>66.</td>
+            <td>JKUAT</td>
+            <td>JOMO KENYATTA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>67.</td>
+            <td>JKUAT TI</td>
+            <td>JOMO KENYATTA UNIVERSITY OF AGRICULTURE AND TECHNOLOGY TVET INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>68.</td>
+            <td>KABU</td>
+            <td>KABARAK UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>69.</td>
+            <td>KABETE POLY</td>
+            <td>KABETE NATIONAL POLYTECHNIC</td>
+            <td>polytechnic</td>
+        </tr>
+        <tr>
+            <td>70.</td>
+            <td>KAELO TTI</td>
+            <td>KAELO TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>71.</td>
+            <td>KAGUMO TTC</td>
+            <td>KAGUMO TEACHERS TRAINING COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>72.</td>
+            <td>KAIBOI T T I</td>
+            <td>KAIBOI TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>73.</td>
+            <td>KAFU</td>
+            <td>KAIMOSI FRIENDS UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>74.</td>
+            <td>KAJIADO EAST TVC</td>
+            <td>KAJIADO EAST TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>75.</td>
+            <td>KAJIADO WEST TVC</td>
+            <td>KAJIADO WEST TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        
+        <tr>
+            <td>76.</td>
+            <td>KAKRAO TVC</td>
+            <td>KAKRAO TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>77.</td>
+            <td>KAMUKUNJI TVC</td>
+            <td>KAMUKUNJI TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>78.</td>
+            <td>KANDARA TVC</td>
+            <td>KANDARA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>79.</td>
+            <td>KAPCHEPKOR TTI</td>
+            <td>KAPCHEPKOR TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>80.</td>
+            <td>KAPCHEROP TVC</td>
+            <td>KAPCHEROP TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>81.</td>
+            <td>KARU</td>
+            <td>KARATINA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>82.</td>
+            <td>KAREN TTI</td>
+            <td>KAREN TECHNICAL TRAINING INSTITUTE FOR THE DEAF</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>83.</td>
+            <td>KARUMO TTI</td>
+            <td>KARUMO TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>84.</td>
+            <td>KASARANI TVC</td>
+            <td>KASARANI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>85.</td>
+            <td>KATINE</td>
+            <td>KATINE TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>86.</td>
+            <td>KCA</td>
+            <td>KCA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>87.</td>
+            <td>KENDEGE</td>
+            <td>KENDEGE TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>88.</td>
+            <td>KENGEN GEOTHERMAL TC</td>
+            <td>KENGEN GEOTHERMAL TRAINING CENTRE</td>
+            <td>training centre</td>
+        </tr>
+        <tr>
+            <td>89.</td>
+            <td>KAGEU</td>
+            <td>KENYA ASSEMBLIES OF GOD EAST UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>90.</td>
+            <td>KCNP</td>
+            <td>KENYA COAST POLYTECHNIC</td>
+            <td>polytechnic</td>
+        </tr>
+        <tr>
+            <td>91.</td>
+            <td>KFC</td>
+            <td>KENYA FORESTRY COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>92.</td>
+            <td>KHEU</td>
+            <td>KENYA HIGHLANDS EVANGELICAL UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>93.</td>
+            <td>KITI</td>
+            <td>KENYA INDUSTRIAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>94.</td>
+            <td>KIHBT</td>
+            <td>KENYA INSTITUTE OF HIGHWAYS AND BUILDING TECHNOLOGY</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>95.</td>
+            <td>KIMC</td>
+            <td>KENYA INSTITUTE OF MASS COMMUNICATION</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>96.</td>
+            <td>KISM</td>
+            <td>KENYA INSTITUTE OF SURVEYING AND MAPPING</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>97.</td>
+            <td>KEMU</td>
+            <td>KENYA METHODIST UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>98.</td>
+            <td>KSA</td>
+            <td>KENYA SCHOOL OF AGRICULTURE</td>
+            <td>school</td>
+        </tr>
+        <tr>
+            <td>99.</td>
+            <td>KESRA</td>
+            <td>KENYA SCHOOL OF REVENUE ADMINISTRATION</td>
+            <td>school</td>
+        </tr>
+        <tr>
+            <td>100.</td>
+            <td>KTTC</td>
+            <td>KENYA TECHNICAL TRAINERS COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>101.</td>
+            <td>KEWI</td>
+            <td>KENYA WATER INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>102.</td>
+            <td>KWSTI</td>
+            <td>KENYA WILDLIFE SERVICE TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>103.</td>
+            <td>KU</td>
+            <td>KENYATTA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>104.</td>
+            <td>MNUC</td>
+            <td>KENYATTA UNIVERSITY - MAMA NGINA UNIVERSITY COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>105.</td>
+            <td>KERICHO TOWNSHIP TVC</td>
+            <td>KERICHO TOWNSHIP TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>106.</td>
+            <td>KERIO VALLEY TVC</td>
+            <td>KERIO VALLEY TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>107.</td>
+            <td>KEROKA TTI</td>
+            <td>KEROKA TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>108.</td>
+            <td>KIST</td>
+            <td>KIAMBU INSTITUTE OF SCIENCE AND TECHNOLOGY</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>109.</td>
+            <td>KIBABII TTC</td>
+            <td>KIBABII DIPLOMA TEACHERS TRAINING COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>110.</td>
+            <td>KBBU</td>
+            <td>KIBABII UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>111.</td>
+            <td>KIBWEZI TVC</td>
+            <td>KIBWEZI TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>112.</td>
+            <td>KIENI TVC</td>
+            <td>KIENI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>113.</td>
+            <td>KIGUMO TTI</td>
+            <td>KIGUMO TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>114.</td>
+            <td>KIIRUA TTI</td>
+            <td>KIIRUA TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>115.</td>
+            <td>KIMASIAN TVC</td>
+            <td>KIMASIAN TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>116.</td>
+            <td>KIMININI TVC</td>
+            <td>KIMININI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>117.</td>
+            <td>KINANGO TVC</td>
+            <td>KINANGO TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>118.</td>
+            <td>KINANGOP TVC</td>
+            <td>KINANGOP TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>119.</td>
+            <td>KIPIPIRI TVC</td>
+            <td>KIPIPIRI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>120.</td>
+            <td>KIPKABUS TVC</td>
+            <td>KIPKABUS TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>121.</td>
+            <td>KIPSINENDE TVC</td>
+            <td>KIPSINENDE TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>122.</td>
+            <td>KIPSOEN TVC</td>
+            <td>KIPSOEN TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>123.</td>
+            <td>KIPTARAGON TVC</td>
+            <td>KIPTARAGON TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>124.</td>
+            <td>KYU</td>
+            <td>KIRINYAGA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>125.</td>
+            <td>KWUST</td>
+            <td>KIRIRI WOMENS UNIVERSITY OF SCIENCE AND TECHNOLOGY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>126.</td>
+            <td>KSI POLY</td>
+            <td>KISII NATIONAL POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>127.</td>
+            <td>KSU</td>
+            <td>KISII UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>128.</td>
+            <td>KISII UNIVERSITY TI</td>
+            <td>KISII UNIVERSITY TVET INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>129.</td>
+            <td>KISTVC</td>
+            <td>KISIWA TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>130.</td>
+            <td>KICDT</td>
+            <td>KISUMU INSTITUTE OF COMMUNITY DEVELOPMENT TRAINING</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>131.</td>
+            <td>KSM POLY</td>
+            <td>KISUMU POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>132.</td>
+            <td>KITALE NP</td>
+            <td>KITALE NATIONAL POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>133.</td>
+            <td>KITELAKAPEL TTI</td>
+            <td>KITELAKAPEL TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>134.</td>
+            <td>KITUTU MASABA TVC</td>
+            <td>KITUTU MASABA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>135.</td>
+            <td>KSUC</td>
+            <td>KOITALEEL SAMOEI UNIVERSITY COLLEGE</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>136.</td>
+            <td>KONGONI TVC</td>
+            <td>KONGONI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>137.</td>
+            <td>KONOIN TTI</td>
+            <td>KONOIN TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>138.</td>
+            <td>KOSHIN TTI</td>
+            <td>KOSHIN TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>139.</td>
+            <td>LAIKIPIA EAST TVC</td>
+            <td>LAIKIPIA EAST TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>140.</td>
+            <td>LAIKIPIA NORTH TVC</td>
+            <td>LAIKIPIA NORTH TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>141.</td>
+            <td>LU</td>
+            <td>LAIKIPIA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>142.</td>
+            <td>LAIKIPIA UNIVERSITY TI</td>
+            <td>LAIKIPIA UNIVERSITY TVET INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>143.</td>
+            <td>LAISAMIS TVC</td>
+            <td>LAISAMIS TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>144.</td>
+            <td>LARI TVC</td>
+            <td>LARI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>145.</td>
+            <td>LIKONI TVC</td>
+            <td>LIKONI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>146.</td>
+            <td>LIMURU TVC</td>
+            <td>LIMURU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>147.</td>
+            <td>LODWAR TVC</td>
+            <td>LODWAR TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>148.</td>
+            <td>LUGARI TTC</td>
+            <td>LUGARI DIPLOMA TEACHERS TRAINING COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>149.</td>
+            <td>LUKENYA</td>
+            <td>LUKENYA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>150.</td>
+            <td>LUNGA LUNGA TVC</td>
+            <td>LUNGA LUNGA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>151.</td>
+            <td>MMTVC</td>
+            <td>MAASAI MARA TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>152.</td>
+            <td>MMARAU</td>
+            <td>MAASAI MARA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>153.</td>
+            <td>MABERA TVC</td>
+            <td>MABERA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>154.</td>
+            <td>MTIB</td>
+            <td>MACHAKOS TECHNICAL INSTITUTE FOR THE BLIND</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>155.</td>
+            <td>MCKU</td>
+            <td>MACHAKOS UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>156.</td>
+            <td>MAMA NGINA UNIVERSITY COLLEGE</td>
+            <td>MAMA NGINA UNIVERSITY COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>157.</td>
+            <td>MUA</td>
+            <td>MANAGEMENT UNIVERSITY OF AFRICA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>158.</td>
+            <td>MANDERA TTI</td>
+            <td>MANDERA TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>159.</td>
+            <td>MANYATTA TVC</td>
+            <td>MANYATTA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>160.</td>
+            <td>MARIST</td>
+            <td>MARIST INTERNATIONAL UNIVERSITY COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>161.</td>
+            <td>MASAI TTI</td>
+            <td>MASAI TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>162.</td>
+            <td>MSU</td>
+            <td>MASENO UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>163.</td>
+            <td>MMUST</td>
+            <td>MASINDE MULIRO UNIVERSITY OF SCIENCE & TECHNOLOGY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>164.</td>
+            <td>MASINGA TVC</td>
+            <td>MASINGA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>165.</td>
+            <td>MATHENGE TTI</td>
+            <td>MATHENGE TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>166.</td>
+            <td>MATHIOYA TVC</td>
+            <td>MATHIOYA TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>167.</td>
+            <td>MATHIRA TVC</td>
+            <td>MATHIRA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>168.</td>
+            <td>MATILI TTI</td>
+            <td>MATILI TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>169.</td>
+            <td>MAWEGO TTI</td>
+            <td>MAWEGO TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>170.</td>
+            <td>MBEERE NORTH TVC</td>
+            <td>MBEERE NORTH TVC TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>171.</td>
+            <td>MERTI TTI</td>
+            <td>MERTI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>172.</td>
+            <td>MERU POLY</td>
+            <td>MERU NATIONAL POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>173.</td>
+            <td>MUST</td>
+            <td>MERU UNIVERSITY OF SCIENCE AND TECHNOLOGY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>174.</td>
+            <td>MICHUKI TTI</td>
+            <td>MICHUKI TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>175.</td>
+            <td>MITUNGUU TTI</td>
+            <td>MITUNGUU TECHNICAL TRAINING INSTITUTE</td>
+            <td>institute</td>
+        </tr>
+        <tr>
+            <td>176.</td>
+            <td>MOCHONGOI TVC</td>
+            <td>MOCHONGOI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>177.</td>
+            <td>MU</td>
+            <td>MOI UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>178.</td>
+            <td>MOIBEN TVC</td>
+            <td>MOIBEN TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>179.</td>
+            <td>MOLO TVC</td>
+            <td>MOLO TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>180.</td>
+            <td>MORENDAT</td>
+            <td>MORENDAT INSTITUTE OF OIL AND GAS</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>181.</td>
+            <td>MKU</td>
+            <td>MOUNT KENYA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>182.</td>
+            <td>MSAMBWENI TVC</td>
+            <td>MSAMBWENI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>183.</td>
+            <td>MUKIRIA TTI</td>
+            <td>MUKIRIA TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>184.</td>
+            <td>MUKURWEINI TTI</td>
+            <td>MUKURWEINI TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>185.</td>
+            <td>MULANGO TVC</td>
+            <td>MULANGO TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>186.</td>
+            <td>MMU</td>
+            <td>MULTIMEDIA UNIVERSITY OF KENYA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>187.</td>
+            <td>MUMIAS WEST TVC</td>
+            <td>MUMIAS WEST TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>188.</td>
+            <td>MUNGATSI TVC</td>
+            <td>MUNGATSI TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>189.</td>
+            <td>MURAGA TVC</td>
+            <td>MURAGA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>190.</td>
+            <td>MURANGA TTI</td>
+            <td>MURANG'A TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>191.</td>
+            <td>MUT</td>
+            <td>MURANG'A UNIVERSITY OF TECHNOLOGY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>192.</td>
+            <td>MURANG'A UNIVERSITY TI</td>
+            <td>MURANG'A UNIVERSITY OF TECHNOLOGY TVET INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>193.</td>
+            <td>MUSAKASA TTI</td>
+            <td>MUSAKASA TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>194.</td>
+            <td>MWALA TVC</td>
+            <td>MWALA TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>195.</td>
+            <td>MWEA TVC</td>
+            <td>MWEA TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>196.</td>
+            <td>NACHU TVC</td>
+            <td>NACHU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>197.</td>
+            <td>NAIROBI TTI</td>
+            <td>NAIROBI TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>198.</td>
+            <td>NAIVASHA TVC</td>
+            <td>NAIVASHA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>199.</td>
+            <td>NAROK WEST TTI</td>
+            <td>NAROK WEST TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>200.</td>
+            <td>NAVAKHOLO TVC</td>
+            <td>NAVAKHOLO TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>201.</td>
+            <td>NDARAGWA TVC</td>
+            <td>NDARAGWA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>202.</td>
+            <td>NDIA TVC</td>
+            <td>NDIA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>203.</td>
+            <td>NGONG TVC</td>
+            <td>NGONG TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>204.</td>
+            <td>NJORO TTI</td>
+            <td>NJORO TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>205.</td>
+            <td>NKABUNE TTI</td>
+            <td>NKABUNE TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>206.</td>
+            <td>NEPOLY</td>
+            <td>NORTH EASTERN NATIONAL POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>207.</td>
+            <td>NORTH HORR TVC</td>
+            <td>NORTH HORR TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>208.</td>
+            <td>NUU TVC</td>
+            <td>NUU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>209.</td>
+            <td>NYAKACH TVC</td>
+            <td>NYAKACH TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>210.</td>
+            <td>NYANDARUA POLY</td>
+            <td>NYANDARUA NATIONAL POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>211.</td>
+            <td>NYERI POLY</td>
+            <td>NYERI NATIONAL POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>212.</td>
+            <td>OKAME TVC</td>
+            <td>OKAME TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>213.</td>
+            <td>OL'LESSOS TTI</td>
+            <td>OL'LESSOS TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>214.</td>
+            <td>OMUGA TVC</td>
+            <td>OMUGA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>215.</td>
+            <td>OROGARE TVC</td>
+            <td>OROGARE TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>216.</td>
+            <td>PAC</td>
+            <td>PAN AFRICA CHRISTIAN UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>217.</td>
+            <td>PCKINYANJUI TTI</td>
+            <td>PC KINYANJUI TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>218.</td>
+            <td>PIU</td>
+            <td>PIONEER INTERNATIONAL UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>219.</td>
+            <td>PUEA</td>
+            <td>PRESBYTERIAN UNIVERSITY OF EAST AFRICA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>220.</td>
+            <td>PU</td>
+            <td>PWANI UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>221.</td>
+            <td>RACHUONYO TVC</td>
+            <td>RACHUONYO TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>222.</td>
+            <td>RTI</td>
+            <td>RAILWAY TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>223.</td>
+            <td>RIAT</td>
+            <td>RAMOGI INSTITUTE OF ADVANCE TECHNOLOGY</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>224.</td>
+            <td>RANGWE TVC</td>
+            <td>RANGWE TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>225.</td>
+            <td>RCMRD</td>
+            <td>REGIONAL CENTRE FOR MAPPING OF RESOURCES FOR DEVELOPMENT</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>226.</td>
+            <td>RIAMO TVC</td>
+            <td>RIAMO TECHNICAL VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>227.</td>
+            <td>RU</td>
+            <td>RIARA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>228.</td>
+            <td>RIATIRIMBA TVC</td>
+            <td>RIATIRIMBA TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>229.</td>
+            <td>RVIST</td>
+            <td>RIFT VALLEY INSTITUTE OF SCIENCE AND TECHNOLOGY</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>230.</td>
+            <td>RIFT VALLEY TTI</td>
+            <td>RIFT VALLEY TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>231.</td>
+            <td>RIRAGIA TTI</td>
+            <td>RIRAGIA TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>232.</td>
+            <td>RNU</td>
+            <td>RONGO UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>233.</td>
+            <td>RONGO UNIVERSITY TI</td>
+            <td>RONGO UNIVERSITY TECHNICAL & VOCATIONAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>234.</td>
+            <td>RUIRU TVC</td>
+            <td>RUIRU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>235.</td>
+            <td>RUNYENJES TVC</td>
+            <td>RUNYENJES TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>236.</td>
+            <td>SABATIA TVC</td>
+            <td>SABATIA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>237.</td>
+            <td>SAMBURU TVC</td>
+            <td>SAMBURU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>238.</td>
+            <td>SIST</td>
+            <td>SANG'ALO INSTITUTE OF SCIENCE AND TECHNOLOGY</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>239.</td>
+            <td>SCU</td>
+            <td>SCOTT CHRISTIAN UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>240.</td>
+            <td>SEKU TI</td>
+            <td>SEKU DIRECTORATE OF TVET WOTE CAMPUS</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>241.</td>
+            <td>SEME TVC</td>
+            <td>SEME TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>242.</td>
+            <td>SHAMBERERE TTI</td>
+            <td>SHAMBERERE TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>243.</td>
+            <td>SIALA TTI</td>
+            <td>SIALA TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>244.</td>
+            <td>SIT</td>
+            <td>SIAYA INSTITUTE OF TECHNOLOGY</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>245.</td>
+            <td>SIGALAGALA POLY</td>
+            <td>SIGALAGALA NATIONAL POLYTECHNIC</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>246.</td>
+            <td>SIKRI TTIBD</td>
+            <td>SIKRI TECHNICAL TRAINING INSTITUTE FOR THE BLIND AND DEAF</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>247.</td>
+            <td>SIRISIA TVC</td>
+            <td>SIRISIA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>248.</td>
+            <td>SIRUTI TVC</td>
+            <td>SIRUTI TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>249.</td>
+            <td>SOT TTI</td>
+            <td>SOT TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>250.</td>
+            <td>SOTIK TTI</td>
+            <td>SOTIK TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>251.</td>
+            <td>SEKU</td>
+            <td>SOUTH EASTERN KENYA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>252.</td>
+            <td>ST.JOSEPH TI</td>
+            <td>ST JOSEPH'S TECHNICAL INSTITUTE FOR THE DEAF NYANG'OMA</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>253.</td>
+            <td>SPU</td>
+            <td>ST PAULS UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>254.</td>
+            <td>TTU</td>
+            <td>TAITA TAVETA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>255.</td>
+            <td>TANA RIVER TVC</td>
+            <td>TANA RIVER TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>256.</td>
+            <td>TUC</td>
+            <td>TANGAZA UNIVERSITY COLLEGE</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>257.</td>
+            <td>TAVETA TVC</td>
+            <td>TAVETA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>258.</td>
+            <td>TUK</td>
+            <td>TECHNICAL UNIVERSITY OF KENYA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>259.</td>
+            <td>TUM</td>
+            <td>TECHNICAL UNIVERSITY OF MOMBASA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>260.</td>
+            <td>TETU TVC</td>
+            <td>TETU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>261.</td>
+            <td>THARAKA TVC</td>
+            <td>THARAKA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>262.</td>
+            <td>THRKU</td>
+            <td>THARAKA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>263.</td>
+            <td>THARAKA UNIVERSITY TI</td>
+            <td>THARAKA UNIVERSITY TVET INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>264.</td>
+            <td>CUK NAIROBI CBD TI</td>
+            <td>THE CUK NAIROBI CBD TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>265.</td>
+            <td>TEAU</td>
+            <td>THE EAST AFRICAN UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>266.</td>
+            <td>UOEM TI</td>
+            <td>THE UNIVERSITY OF EMBU TVET INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>267.</td>
+            <td>THIKA TTI</td>
+            <td>THIKA TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>268.</td>
+            <td>TIGANIA EAST TVC</td>
+            <td>TIGANIA EAST TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>269.</td>
+            <td>TINDIRET TVC</td>
+            <td>TINDIRET TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>270.</td>
+            <td>TOMBOYA LC</td>
+            <td>TOM MBOYA LABOUR COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>271.</td>
+            <td>TMU</td>
+            <td>TOM MBOYA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>272.</td>
+            <td>TOTAL TVC</td>
+            <td>TOTAL TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>273.</td>
+            <td>TSEIKURU TTI</td>
+            <td>TSEIKURU TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>274.</td>
+            <td>TURBO TVC</td>
+            <td>TURBO TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>275.</td>
+            <td>TURKANA EAST TVC</td>
+            <td>TURKANA EAST TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>276.</td>
+            <td>TURKANA NORTH TVC</td>
+            <td>TURKANA NORTH TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>277.</td>
+            <td>TRUC</td>
+            <td>TURKANA UNIVERSITY COLLEGE</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>278.</td>
+            <td>UGENYA TVC</td>
+            <td>UGENYA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>279.</td>
+            <td>UGUNJA TVC</td>
+            <td>UGUNJA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>280.</td>
+            <td>BARA</td>
+            <td>UNIVERSITY OF EASTERN AFRICA, BARATON</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>281.</td>
+            <td>UOE</td>
+            <td>UNIVERSITY OF ELDORET</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>282.</td>
+            <td>UOEM</td>
+            <td>UNIVERSITY OF EMBU</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>283.</td>
+            <td>UOK</td>
+            <td>UNIVERSITY OF KABIANGA</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>284.</td>
+            <td>UON</td>
+            <td>UNIVERSITY OF NAIROBI</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>285.</td>
+            <td>URIRI TVC</td>
+            <td>URIRI TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>286.</td>
+            <td>UZIMA</td>
+            <td>UZIMA UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>287.</td>
+            <td>WAJIR EAST TVC</td>
+            <td>WAJIR EAST TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>288.</td>
+            <td>WANGA TVC</td>
+            <td>WANGA TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>289.</td>
+            <td>WEBUYE WEST TVC</td>
+            <td>WEBUYE WEST TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>290.</td>
+            <td>WERU TVC</td>
+            <td>WERU TECHNICAL AND VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>291.</td>
+            <td>WOTE TTI</td>
+            <td>WOTE TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>292.</td>
+            <td>WUMINGU TVC</td>
+            <td>WUMINGU TECHNICAL & VOCATIONAL COLLEGE</td>
+            <td>college</td>
+        </tr>
+        <tr>
+            <td>293.</td>
+            <td>ZETECH</td>
+            <td>ZETECH UNIVERSITY</td>
+            <td>university</td>
+        </tr>
+        <tr>
+            <td>294.</td>
+            <td>ZIWA TTI</td>
+            <td>ZIWA TECHNICAL TRAINING INSTITUTE</td>
+            <td>college</td>
+        </tr>
+
+    </table>
+<script>
+        function search_animal() {
+            let input = document.getElementById('searchbar').value
+            input=input.toLowerCase();
+            let x = document.getElementsByClassName('animals');
+            
+            for (i = 0; i < x.length; i++) { 
+                if (!x[i].innerHTML.toLowerCase().includes(input)) {
+                    x[i].style.display="none";
+                }
+                else {
+                    x[i].style.display="list-item";                 
+                }
+            }
+        }
+</script>
+
+<style>
+</style>
+</body>
+</html>

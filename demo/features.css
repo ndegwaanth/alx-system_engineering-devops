@@ -1,0 +1,130 @@
+/*entry_point*/
+.button-login {
+
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+}
+
+.button-login:hover {
+    background-color: #45a049;
+    color: blue;
+}
+.account {
+        color: blue;
+        cursor: pointer;
+        padding-top: 100;
+        text-decoration: underline;
+        font-size: 20px;
+}
+.account:hover{
+            color: red;
+            height: 10px;
+        }
+.div-1 {
+        text-align:center;
+    }
+/* file 2*/
+.frame {
+    width: 1365px;
+    height: 400px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+.forms {
+    text-align: left;
+    color: blue;
+}
+input {
+    border-radius: 5px;
+    color: red;
+    width: 200px;
+    height: 20px;
+}
+button {
+    color:white;
+    cursor: pointer;
+    background-color: blue;
+    border: none;
+    border-radius: 8px;
+    height: 10px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+
+}
+
+/* file 3*/
+.data {
+    display: list-item;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.data:hover {
+    background-color: #45a049;
+}
+.list {
+padding-right: 20px;
+}
+.category
+.name 
+.key {
+display: flex;
+flex-direction: row;
+justify-content:space-between;
+align-items: center;
+padding-right: 20px;
+
+}
+.place-search{
+display: flex;
+align-items: center;
+flex-direction:row;
+align-items:flex-end;
+border: none;
+border-radius: 8px;
+margin-top: 90px;
+margin-left: 8px;
+
+
+}
+.search{
+
+width: 20px;
+align-items:end;
+flex-direction: column-reverse;
+margin-left: 5px;
+cursor: pointer;
+}
+.search:hover{
+opacity: 15px;
+box-shadow: 5px 5px 5px black;
+}
+.menu-icon{
+width: 30px;
+display: flex;
+flex-direction:row-reverse;
+justify-content: end;
+}
+.menu-icon:hover{
+opacity: 15px;
+box-shadow: 5px 5px 5px black;
+}
