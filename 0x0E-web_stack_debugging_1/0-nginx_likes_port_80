@@ -1,18 +1,18 @@
 #!/bin/env bash
 # This script automate the nginx web server debuging
 
-if ! command -v nginx &> /dev/null;
+if ! command -v nginx &> /dev/null
 then
    sudo apt update
    sudo apt install nginx -y
 fi
 
-if ! system is-active --quiet nginx;
+if ! system is-active --quiet nginx
 then
    sudo system start nginx
 fi
 
-if ! sudo netstat -tuln | grep -q ":80";
+if ! sudo netstat -tuln | grep -q ":80"
 then
    sudo sed -i 's/^ *listen .*;$/    listen 80;/g' /etc/nginx/sites-available/default
 fi
