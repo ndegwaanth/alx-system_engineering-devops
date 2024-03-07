@@ -1,3 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # Bash script to configure Nginx
-if ! pgrep nginx >/dev/null; then sudo apt update && sudo apt install nginx -y && sudo systemctl start nginx && sudo sed -i 's/^ *listen .*;$/    listen 80;/g' /etc/nginx/sites-available/default && sudo systemctl restart nginx; fi
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+pkill -l nginx
