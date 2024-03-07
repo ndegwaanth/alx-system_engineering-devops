@@ -1,0 +1,13 @@
+# Redirect HTTP traffic to HTTPS
+frontend http-in
+    bind *:80
+    acl is_http hdr_beg(host) -i http  # Check if the request is HTTP
+    redirect scheme https code 301 if !{ ssl_fc } is_http
+
+# Handle HTTPS traffic
+frontend https-in
+    bind *:443
+    # HTTPS configuration goes here
+
+# backend configuration for HTTPS traffic goes here
+
