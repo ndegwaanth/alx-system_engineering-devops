@@ -17,7 +17,5 @@
 #   sudo sed -i 's/^ *listen .*;$/    listen 80;/g' /etc/nginx/sites-available/default
 #   sudo systemctl restart nginx
 #fi
-
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-
 sudo service nginx restart
