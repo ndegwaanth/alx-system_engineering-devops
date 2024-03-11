@@ -1,4 +1,4 @@
 #!/bin/env bash
 # This script automate the nginx web server debuging
-sudo sed -i '/listen 80;/c\    listen 80 default_server;' /etc/nginx/sites-available/default
-sudo systemctl reload nginx
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
