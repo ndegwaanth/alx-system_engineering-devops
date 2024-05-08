@@ -27,5 +27,5 @@ def top_ten(subreddit):
 
 
 subreddit = "python"
-print("Top 10 hot posts in r/{}:".format(subreddit))
+# print("Top 10 hot posts in r/{}:".format(subreddit))
 top_ten(subreddit)
