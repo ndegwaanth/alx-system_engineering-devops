@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Bash script to configure Nginx
+# Stop Nginx and ensure it’s not running
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-pkill -l nginx
+sudo systemctl stop nginx
+sudo pkill -f nginx
