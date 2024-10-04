@@ -2,4 +2,5 @@
 # Stop Nginx and ensure it’s not running
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo systemctl stop nginx
+sudo systemctl disable nginx
 sudo pkill -f nginx
