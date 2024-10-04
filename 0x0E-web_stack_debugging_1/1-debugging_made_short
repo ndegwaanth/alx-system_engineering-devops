@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-#Nginx likes port 80
-sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-pkill -l nginx
+# debugging nginx if not running on port 80
+sed -i 's/8080/80/g' /etc/nginx/sited-enabled/default
+service nginx restart
+pkill -o nginx
