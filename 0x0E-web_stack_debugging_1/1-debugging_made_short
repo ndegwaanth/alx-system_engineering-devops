@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Stop Nginx and ensure it’s not running
+#Nginx likes port 80
 sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-sudo systemctl stop nginx
-sudo pkill -f nginx
+pkill -l nginx
