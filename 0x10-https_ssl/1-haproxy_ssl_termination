@@ -33,19 +33,19 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend clickviral-frontend
+frontend donplackerr-frontend
         bind *:80
         mode http
         http-request redirect scheme https code 301 unless { ssl_fc }
         http-request set-header X_Forwarded-Proto http
-        default_backend clickviral-backend
+        default_backend donplackerr-backend
 
-frontend clickviral-frontend-https
+frontend donplackerr-frontend-https
         bind *:443 ssl crt /etc/haproxy/certs/www.donplackerr.tech.pem
         http-request set-header X-Forwarded-Proto https
-        default_backend clickviral-backend
+        default_backend donplackerr-backend
 
-backend clickviral-backend
+backend donplackerr-backend
         balance roundrobin
         server 47538-web-01 34.229.67.93:80 check
         server 47538-web-02 52.86.25.39:80 check
