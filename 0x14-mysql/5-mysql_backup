@@ -1,49 +1,11 @@
-#!/bin/bash
-set -e  # Exit immediately if a command exits with a non-zero status
+#!/usr/bin/env bash
+# backup and compress my databases
 
-# Function to show usage
-usage() {
-    echo "Usage: $0 <mysql_password>"
-    exit 1
-}
+# variables
+day=$(date +"%d")
+month=$(date +"%m")
+year=$(date +"%Y")
+file_name="$day-$month-$year.tar.gz"
 
-# Check if a password argument is provided
-if [ "$#" -ne 1 ]; then
-    usage
-fi
-
-# Get the password from the argument
-MYSQL_PASSWORD="$1"
-
-# Define the backup file names
-DUMP_FILE="backup.sql"
-DATE=$(date +%d-%m-%Y)  # Get the current date in the required format
-ARCHIVE_FILE="${DATE}.tar.gz"
-
-# Check if mysqldump is installed
-if ! command -v mysqldump &> /dev/null; then
-    echo "Error: mysqldump is not installed."
-    exit 1
-fi
-
-# Generate MySQL dump containing all databases
-if mysqldump -u root -p"$MYSQL_PASSWORD" --all-databases > "$DUMP_FILE"; then
-    echo "MySQL dump created successfully."
-else
-    echo "Error: MySQL dump failed."
-    exit 1
-fi
-
-# Create a compressed tar.gz archive of the dump file
-if tar -czf "$ARCHIVE_FILE" "$DUMP_FILE"; then
-    echo "Backup archive created successfully: $ARCHIVE_FILE"
-else
-    echo "Error: Failed to create backup archive."
-    exit 1
-fi
-
-# Optionally remove the dump file after archiving
-rm "$DUMP_FILE"
-
-# Output the name of the created archive
-echo "Backup completed: $ARCHIVE_FILE"
+mysqldump --all-databases -u root --password="$1" > backup.sql
+tar -czvf "$file_name" backup.sql
