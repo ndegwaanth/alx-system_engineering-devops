@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # debugging nginx if not running on port 80
 sed -i 's/8080/80/g' /etc/nginx/sited-enabled/default
-service nginx restart
-pkill -o nginx
+service nginx start
+pkill -STOP nginx
