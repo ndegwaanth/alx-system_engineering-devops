@@ -34,16 +34,13 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 frontend donplackerr-frontend
-        bind *:80
-        mode http
-        http-request redirect scheme https code 301 unless { ssl_fc }
-        http-request set-header X_Forwarded-Proto http
-        default_backend donplackerr-backend
+	 bind *:80
+    	 http-request redirect scheme https code 301 unless { ssl_fc }
+    	 default_backend donplackerr-backend
 
 frontend donplackerr-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.donplackerr.tech.pem
-        http-request set-header X-Forwarded-Proto https
-        default_backend donplackerr-backend
+	 bind *:443 ssl crt /etc/haproxy/certs/www.donplackerr.tech.pem
+	 default_backend donplackerr-backend
 
 backend donplackerr-backend
         balance roundrobin
