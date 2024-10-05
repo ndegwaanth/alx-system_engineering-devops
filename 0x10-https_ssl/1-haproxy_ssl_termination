@@ -33,18 +33,18 @@ defaults
 	errorfile 503 /etc/haproxy/errors/503.http
 	errorfile 504 /etc/haproxy/errors/504.http
 
-frontend webkokole-frontend
+frontend donplacker-frontend
 	bind *:80
 	mode http
 	http-request set-header X_Forwarded-Proto http
-	default_backend webkokole-backend
+	default_backend donplacker-backend
 
-frontend webkokole-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.webkokole.tech.pem
+frontend donplacker-frontend-https
+	bind *:443 ssl crt /etc/haproxy/certs/www.donplacker.tech.pem
 	http-request set-header X-Forwarded-Proto https
-	default_backend webkokole-backend
+	default_backend donplacker-backend
 
-backend webkokole-backend
+backend donplacker-backend
 	balance roundrobin
     server 47538-web-01 34.229.67.93:80 check
     server 47538-web-02 52.86.25.39:80 check
